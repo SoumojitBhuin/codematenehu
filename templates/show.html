@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Student Information</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Serial No.</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Semester</th>
+                <th>Course Name</th>
+                <th>Roll No</th>
+                <th>Phone No</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for details in alldetails %}
+            <tr>
+                <th scope="row">{{loop.index}}</th>
+                <td>{{details.name}}</td>
+                <td>{{details.dept}}</td>
+                <td>{{details.sem}}</td>
+                <td>{{details.course}}</td>
+                <td>{{details.roll}}</td>
+                <td>{{details.phno}}</td>
+            </tr>
+             {% endfor %}
+            
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+</body>
+</html>

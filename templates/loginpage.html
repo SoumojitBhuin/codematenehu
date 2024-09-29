@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Coding Event Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .back-btn {
+            background-color: #ff6347;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login for Coding Event</h2>
+        <form action="/button" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="text" name="department" placeholder="Department"  required>
+            <input type="number" name="semester" placeholder="Semester" required>
+            <input type="text" name="course" placeholder="Course Name"  required>
+            <input type="text" name="roll_no" placeholder="Roll_No" required>
+            <input type="number" name="phone_no" placeholder="Phone_No" required>
+            <button type="submit">Submit</button>
+        </form>
+        <br>
+        <button class="back-btn" onclick="location.href='http://127.0.0.1:5000'"">Back to Home</button>
+    </div>
+
+</body>
+</html>

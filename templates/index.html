@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codemate - NEHU</title>
+    <style>
+        body {
+            font-family: Times New Roman, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: left;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .container {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 2px solid #000000;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1> <font size="20"> Codemate </font></h1>
+    <p>Code Our Future</p>
+    <img src="/static/images1.avif" alt="Codemate Group" width="150" />
+</header>
+
+<nav>
+    <a href="/about">About Us</a>
+    <div class="dropdown">
+        <a href="#">Members</a>
+        <div class="dropdown-content">
+            <a href="#">Member 1 - IT, 3rd Sem</a>
+            <a href="#">Member 2 - CSE, 5th Sem</a>
+            <a href="#">Member 3 - ECE, 7th Sem</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h2><font size="5">UPCOMING EVENTS</font></h2>
+    <table>
+        <tr>
+            <th>Event</th>
+            <th>Eligibility</th>
+            <th>Requirements</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Place</th>
+            <th>Register</th>
+        </tr>
+        <tr>
+            <td>Codeathon</td>
+            <td>Open to All</td>
+            <td>Laptop, IDE</td>
+            <td>15th Oct 2024</td>
+            <td>10:00 AM</td>
+            <td>Auditorium</td>
+            
+            <td><a class="btn btn-primary" href="/button" role="button">
+                <button type="button" class="btn btn-outline-primary">Primary</button></a></td>
+        </tr>
+        <!-- More events can be added here -->
+    </table>
+
+    <h2>Ongoing Projects</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Project 1</h3>
+            <p>Developing a library management system.</p>
+        </div>
+        <div class="card">
+            <h3>Project 2</h3>
+            <p>Building an AI chatbot for university queries.</p>
+        </div>
+        <div class="card">
+            <h3>Project 3</h3>
+            <p>Building an AI chatbot for university queries.</p>
+        </div>
+        <!-- More projects can be added here -->
+    </div>
+
+    <h2>Past Achievements</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Achievement 1</h3>
+            <p>1st place in National Hackathon 2023</p>
+        </div>
+        <div class="card">
+            <h3>Achievement 2</h3>
+            <p>Developed a community-driven coding platform.</p>
+        </div>
+        <!-- More achievements can be added here -->
+    </div>
+</div>
+
+<footer>
+    <p>Contact us: <a href="mailto:codemate@nehu.ac.in">codemate@nehu.ac.in</a> | 
+    Join our <a href="https://wa.me/group_link">WhatsApp Group</a></p>
+</footer>
+
+</body>
+</html>
